@@ -1,0 +1,13 @@
+try:
+    with open(textFile.txt, 'r') as f:
+      cont = f.read()
+      print(cont)
+
+except:
+  print("could not find file")
+  book = dict()
+  sentence = input("Enter the text:")
+  newsent = sentence.split()
+  for each in newsent:
+        book[each] = book.get(each,0) + 1
+print("See how many each word appears: ",book)

@@ -1,0 +1,14 @@
+#counting how many times a word appears in the list
+
+mydict = dict()
+names = ["nana","jin","Lorie","lamb","jin","lamb"]
+for name in names :
+    if name not in mydict:
+         mydict[name] = 1
+    else :
+        mydict[name] = mydict[name] + 1
+print(mydict)
+
+nam = {"nana" :1 ,"jin" : 2,"Lorie" : 3,"lamb" :4,"jin" :5}
+for a,b in nam.items() :
+   print(a,b)
